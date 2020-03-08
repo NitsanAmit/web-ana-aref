@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "hebrew": "שלום",
+    "german": "Hallo"
+  },
+  {
+    "id": 2,
+    "hebrew": "בוקר טוב",
+    "german": "Guten Morgen"
+  },
+  {
+    "id": 3,
+    "hebrew": "מה נשמע?",
+    "german": "Wie geht's?"
+  },
+  {
+    "id": 4,
+    "hebrew": "הכל טוב",
+    "german": "Alles gut"
+  },
+  {
+    "id": 5,
+    "hebrew": "כלב",
+    "german": "Hund"
+  },
+  {
+    "id": 6,
+    "hebrew": "מיץ תפוזים",
+    "german": "Orangen saft"
+  },
+  {
+    "id": 7,
+    "hebrew": "סליחה",
+    "german": "Entschuldigung"
+  }
+]

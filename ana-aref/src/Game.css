@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:300,400,700|Montserrat:300,400,700&display=swap');
+
+body {
+    font-family: 'Heebo', sans-serif;
+    direction: rtl;
+}
+
+.game-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.answer-btn {
+    background: #efefef;
+    border: #222 1px solid;
+    margin: 6px;
+    padding: 10px;
+    width: 30%;
+    color: #525252;
+    display: block;
+    font-family: 'Heebo', sans-serif;
+}
+
+.answer-btn-wrong {
+    background: #ff5252;
+    color: #eee;
+}
+
+.h-german {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.h-hebrew {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.h-score {
+    font-size: 16px;
+    font-weight: lighter;
+    width: 30%;
+    text-align: left;
+}
