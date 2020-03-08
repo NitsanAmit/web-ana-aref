@@ -33,5 +33,40 @@
     "id": 7,
     "hebrew": "סליחה",
     "german": "Entschuldigung"
+  },
+  {
+    "id": 8,
+    "hebrew": "תודה",
+    "german": "Danke"
+  },
+  {
+    "id": 9,
+    "hebrew": "אין לי קורונה",
+    "german": "Ich Habe kein Coronavirus"
+  },
+  {
+    "id": 10,
+    "hebrew": "מה רוצים לאכול היום?",
+    "german": "Was wollen wir essen heute?"
+  },
+  {
+    "id": 11,
+    "hebrew": "זה לא באג זה פיצ'ר",
+    "german": "Es ist kein Fehler, es ist ein Merkmal?"
+  },
+  {
+    "id": 12,
+    "hebrew": "למה לא?",
+    "german": "Warum nicht?"
+  },
+  {
+    "id": 13,
+    "hebrew": "עכשיו",
+    "german": "Jetzt"
+  },
+  {
+    "id": 14,
+    "hebrew": "מאוחר יותר",
+    "german": "Später"
   }
 ]

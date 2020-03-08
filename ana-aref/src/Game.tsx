@@ -2,9 +2,7 @@ import React from "react";
 import Answers from "./Answers";
 import GameHeaders from "./GameHeaders";
 import './Game.css';
-import {getRandomQuestion, getRandomAnswers, getInitialHistory} from "./game-utils"
-
-const data_url = "https://raw.githubusercontent.com/NitsanAmit/web-ana-aref/master/ana-aref/src/test_data.json";
+import {getRandomQuestion, getRandomAnswers, getInitialHistory, getWordslist} from "./game-utils"
 
 export class Game extends React.Component<any, any> {
 
@@ -14,7 +12,7 @@ export class Game extends React.Component<any, any> {
     constructor(props: Readonly<any>) {
         super(props);
         this.state = {
-            currentQuestion: {
+            currentQuestion: { //TODO make undefined?
                 id: 0,
                 german: "",
                 hebrew: ""
@@ -23,18 +21,16 @@ export class Game extends React.Component<any, any> {
             history: {},
             round: 0,
         };
-        fetch(data_url)
-            .then(res => res.json())
-            .then(json => {
-                this.wordsList = json;
-                const currentQuestion = getRandomQuestion(this.wordsList);
-                const answers = getRandomAnswers(this.wordsList, currentQuestion);
-                this.setState({
-                    currentQuestion,
-                    answers,
-                    history: getInitialHistory(this.wordsList)
-                });
+        getWordslist().then(words => {
+            this.wordsList = words;
+            const currentQuestion = getRandomQuestion(this.wordsList);
+            const answers = getRandomAnswers(this.wordsList, currentQuestion);
+            this.setState({
+                currentQuestion,
+                answers,
+                history: getInitialHistory(this.wordsList)
             });
+        });
     }
 
     render() {

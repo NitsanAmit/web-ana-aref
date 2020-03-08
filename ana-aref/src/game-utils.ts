@@ -1,4 +1,5 @@
 import {Question} from "./Game";
+const data_url = "https://raw.githubusercontent.com/NitsanAmit/web-ana-aref/master/ana-aref/src/test_data.json";
 
 export function getRandomQuestion(wordlist: any[], prev ?: Question) {
     let number = Math.floor(Math.random() * wordlist.length);
@@ -26,4 +27,10 @@ export function getInitialHistory(wordlist: any[]) {
         map[obj.id] = true;
         return map;
     }, {});
+}
+
+
+export async function getWordslist() {
+    const res = await fetch(data_url);
+    return await res.json();
 }
