@@ -1,6 +1,5 @@
 import React from "react";
 
-
 export class AnswerButton extends React.Component<any, any> {
     state: { wrongGuess: boolean };
 
